@@ -5,7 +5,11 @@ const { I, loginPage } = inject();
 Given('I am on the HomePage', async() => {
   // TODO: replace with your own step
   I.amOnPage('/');
-  await loginPage.enterUsernameAndPassword();
+  await loginPage.verifyHomePage();
 
 });
+
+Then('User enters name and password',async()=> {
+  await loginPage.enterUsernameAndPassword()
+})
 
