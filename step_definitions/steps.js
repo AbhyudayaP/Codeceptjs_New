@@ -13,6 +13,6 @@ Then('The user enters name and password',async()=> {
   await loginPage.enterUsernameAndPassword()
 });
 
-Then('User clicks on Login button',async()=>{
+Then('The user clicks on Login button',async()=>{
   await loginPage.clickOnLoginButton();
 });
