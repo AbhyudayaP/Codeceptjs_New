@@ -18,9 +18,9 @@ const { I } = inject();
 
    },
  
-   async enterUsernameAndPassword(){
+   async enterUsernameAndPassword(username){
     
-    await I.fillField(this.login,"standard_user");
+    await I.fillField(this.login, username);
     await I.fillField(this.password,"secret_sauce");
    
   

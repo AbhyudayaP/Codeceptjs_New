@@ -9,8 +9,8 @@ Given('I am on the HomePage', async() => {
 
 });
 
-Then('The user enters name and password',async()=> {
-  await loginPage.enterUsernameAndPassword()
+Then(/^The user enters (.*) and password$/,async(username)=> {
+  await loginPage.enterUsernameAndPassword(username);
 });
 
 Then('The user clicks on Login button',async()=>{
