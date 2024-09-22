@@ -7,7 +7,7 @@ const { I } = inject();
     pageTitle: "//div[@class='login_logo']",
     login : "//input[@id='user-name']",
     password: "//input[@id='password']",
-    LoginBtn:"//input[@id='login-button']",
+    LoginButton:"//input[@id='login-button']",
   
   // insert your methods here
    async verifyHomePage(){
@@ -26,6 +26,6 @@ const { I } = inject();
   
 },
  async clickOnLoginButton(){
-  await I.click(this.LoginBtn);
+  await I.click(this.LoginButton);
  }
   }
